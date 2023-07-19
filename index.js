@@ -1,8 +1,4 @@
 (function () {
-    window.addEventListener('DOMContentLoaded', init);
-})();
-
-function init() {
     window.vanusConfig = {
         id: null,
         lang: 'en',
@@ -40,6 +36,10 @@ function init() {
         },
     };
 
+    window.addEventListener('DOMContentLoaded', init);
+})();
+
+function init() {
     const flag = checkVanusConfig();
     if (!flag) {
         console.error('Must set correct config');
