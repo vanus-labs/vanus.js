@@ -4,7 +4,7 @@
 
 function init() {
     window.vanusConfig = {
-        id: '64afc3de43153ccd8ead16e7',
+        id: null,
         lang: 'en',
 
         buttonAttr: {
