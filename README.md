@@ -19,11 +19,11 @@ setVanusConfig(config);
 // For Chinese Language
 <script src="https://www.vanus.cn/js/ai.embed.js"></script>
 <script>
-    const config = {
-        id: 'xxxx',
-        lang: 'cn',
-    };
-    setVanusConfig(config);
+const config = {
+    id: 'xxxx',
+    lang: 'cn',
+};
+setVanusConfig(config);
 </script>
 ```
 
@@ -47,3 +47,58 @@ setVanusConfig(config);
 | Name        | Description   | Required |  Optional  |
 | :--------  | :-----  | :-----  | :----:  |
 | id | Vanus AI Application ID | True | |
+
+## Default Value
+
+```javascript
+// Default css of button
+const buttonStyles = {
+    position: 'fixed',
+    right: '20px',
+    bottom: '20px',
+    zIndex: 500,
+    width: '60px',
+    height: '60px',
+    borderRadius: '30px',
+    border: '0px none',
+    color: '#fff',
+    fontSize: '24px',
+    background: 'linear-gradient(25deg, #086BFF, #A839FF)',
+};
+
+// Default css of iframe
+const iframeStyles = {
+    padding: '8px',
+    borderRadius: '12px',
+    backgroundColor: '#f9f9f9',
+    width: '480px',
+    height: '800px',
+    position: 'fixed',
+    right: '20px',
+    bottom: '90px',
+    zIndex: 500,
+    display: 'none',
+    border: '0px none',
+};
+```
+
+## Common Method
+Please notice that `styles` will be auto merged to default value.
+
+```javascript
+// Set button css
+const styles = {
+    padding: '8px',
+    borderRadius: '12px',
+    backgroundColor: '#f9f9f9',
+};
+setStylesToButton(styles);
+
+// Set iframe css
+const styles = {
+    position: 'fixed',
+    right: '20px',
+    bottom: '20px',
+};
+setStylesToIframe(styles);
+```
